@@ -33,6 +33,7 @@ RUN rpm --rebuilddb \
 		yum-plugin-versionlock-1.1.31-42.el7 \
 		xz-5.2.2-1.el7 \
 		java-1.8.0-openjdk \
+		git \
 	&& yum versionlock add \
 		openssh \
 		openssh-server \
