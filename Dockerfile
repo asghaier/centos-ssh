@@ -32,6 +32,7 @@ RUN rpm --rebuilddb \
 		vim-minimal-7.4.160-2.el7 \
 		yum-plugin-versionlock-1.1.31-42.el7 \
 		xz-5.2.2-1.el7 \
+		java-1.8.0-openjdk \
 	&& yum versionlock add \
 		openssh \
 		openssh-server \
@@ -41,7 +42,6 @@ RUN rpm --rebuilddb \
 		vim-minimal \
 		yum-plugin-versionlock \
 		xz \
-		java-1.8.0-openjdk.x86_64 \
 	&& yum clean all \
 	&& rm -rf /etc/ld.so.cache \
 	&& rm -rf /sbin/sln \
