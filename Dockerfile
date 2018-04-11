@@ -41,6 +41,7 @@ RUN rpm --rebuilddb \
 		vim-minimal \
 		yum-plugin-versionlock \
 		xz \
+		java-1.8.0-openjdk.x86_64 \
 	&& yum clean all \
 	&& rm -rf /etc/ld.so.cache \
 	&& rm -rf /sbin/sln \
